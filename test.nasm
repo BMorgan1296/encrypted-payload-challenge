@@ -10,9 +10,5 @@ _start:
   xor edx, edx
   inc eax
   cpuid
-  xor ebx, ebx
-  mov ebx, eax
-  xor eax, eax
-  mov al, bl
-  and al, 0xf
+  mov eax, ebx
   ret
